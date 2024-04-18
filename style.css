@@ -1,0 +1,697 @@
+/* font-family: "Inter", sans-serif;
+font-family: "Amatic SC", sans-serif */
+
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+span{
+    color: red;
+}
+.heading span{
+    font-family: "Amatic SC", sans-serif;
+}
+
+/* ====== Header ======= */
+#header{
+    position: sticky;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    z-index: 1000;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.header h1{
+    font-size: 2rem;
+}
+.header b{
+    color: red;
+}
+.header .nav{
+    color: grey;
+    display: flex;
+    gap: 2rem;
+    font-weight: 500;
+    font-size: large;    
+}
+a{
+    color: gray;
+    text-decoration: none;
+}
+a:hover, a:active{
+    text-decoration: underline;
+    text-decoration-color: red;
+    color: black;
+}
+#button{
+    background-color: red;
+    filter: brightness(90%);
+    border-color: red;
+    border-radius: 40px;
+    color: white;
+    padding: 0.7rem 1.8rem 0.7rem 1.8rem;
+    font-size: 1.1rem;
+}
+#button:hover{
+    filter: brightness(100%);
+}
+.header #arrow{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+/* ====== Home ======= */
+
+.home{
+    display: flex;
+    align-items: center;
+    gap: 15rem;
+    padding: 5rem;
+    background-color: whitesmoke;
+}
+.home h2{
+    font-family: "Amatic SC", sans-serif;
+    font-size: 4rem;
+}
+.home .video{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.home #video{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.home #video i{
+    color: red;
+    font-size: 2rem;
+}
+.home p{
+    font-size: larger;
+}
+.home img{
+    padding-top: 5rem;
+}
+.home #video:hover{
+    font-weight: 500;
+    color: black;
+}
+#home:active{
+    text-decoration: underline;
+    text-decoration-color: red;
+    color: black;
+}
+
+/* ====== About ======= */
+
+
+.about .heading{
+    padding-top: 8rem;
+        text-align: center;
+        line-height: 0.5rem;
+}
+.about .heading h2{
+    font-family: "Amatic SC", sans-serif;
+    font-size: 3rem;
+}
+#image{
+    padding:4rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.image{
+    position: relative;
+}
+.text{
+    position: absolute;
+    background-color: whitesmoke;
+    border: 1px solid white;
+    height: 150px;
+    width: 550px;
+    text-align: center;
+    bottom: 150px;
+    left: 50px;
+}
+.content{
+    padding: 0rem 6rem 3rem 6rem;
+    line-height: 2rem;
+}
+.about .points li::before {
+    content: '✔ ';
+    color: red;
+}
+#image1{
+    position: relative;
+}
+#icon{
+    position: absolute;
+    font-size: 4rem;
+    background-color: white;
+    border-radius: 50px;
+    top: 40%;
+    left: 40%;
+}
+#icon a{color: red;}
+
+/* ====== why us ====== */
+
+.why{
+    background-color: whitesmoke;
+    padding: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.why_yummy{
+    border-color: rgb(215, 13, 13);
+    background-color: rgb(215, 13, 13);
+    width: 350px;
+    height: 350px;
+    padding: 2rem;
+    color: white;
+}
+h2{
+    font-size: 2rem;
+}
+p{
+    font-size: 1rem;
+}
+.clipboard, .gem, .inbox{
+    text-align: center;
+    border-color: white;
+    background-color: white;
+    width: 200px;
+    height: 300px;
+    padding: 1.5rem;
+    transition: width 0.3s ease, height 0.3s ease;
+}
+.clipboard:hover, .gem:hover, .inbox:hover{
+    width: 280px;
+    height: 340px;
+}
+.clipboard .icon,
+.gem .icon,
+.inbox .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clipboard .icon i,
+.gem .icon i,
+.inbox .icon i {
+  color: red;
+  border: 2px solid #f9d7d7;
+  border-radius: 50%;
+  background-color: #f9d7d7;
+  padding: 7px;
+  font-size: 2rem;  
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#learn{
+    background-color: rgb(224, 119, 119);
+    border: none;
+    border-radius: 30px;
+    color: white;
+    padding: 5px 40px 8px 40px;
+    font-size: 1.2rem;
+    margin: 20px 0px 0px 80px;
+}
+#learn:hover{
+    color: red;
+    background-color: white;
+}
+
+/* ====== stats ====== */
+
+.stats{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background-image: url(img/stats-bg.jpg);
+    background-attachment: fixed;
+    filter: brightness(80%);
+    margin: 5rem 0rem 4rem 0rem;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    padding: 10rem;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.stats h3{
+    filter: saturate(100%);
+    filter: contrast(100%);
+}
+.stats p{
+    opacity: 90%;
+}
+
+/* ====== Menu ====== */
+
+.menu .heading{
+    padding-top: 7rem;
+    text-align: center;
+    line-height: 0.5rem;
+}
+.menu h2{
+    font-family: "Amatic SC", sans-serif;
+    font-size: 3rem;
+}
+.menu #heading{
+    text-align: center;
+    line-height: 0.5rem;
+}
+.menu h1{
+    color: red;
+    font-size: 3rem;
+}
+.menu .type{
+    margin: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    font-size: larger;
+}
+.menu .type #starters{
+    color: red;
+}
+.menu .type a{
+    text-decoration: underline;
+    text-decoration-line: underline;
+    color: black;    
+}
+.menu .type a:hover{
+    text-decoration: underline;
+    text-decoration-color: red;
+    color: red;
+}
+.menu .list{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.menu .food{
+    margin: 2rem;
+    padding: 2rem;
+}
+.menu h3{
+    font-weight:  bold;
+    font-size: x-large;
+}
+.menu .food p{
+    color: grey;
+    font-size: large;
+}
+.menu .food h4{
+    color: red;
+    font-size: large;
+}
+
+
+/* ===== testimonial    ===== */
+
+.testimonial{
+    background-color: whitesmoke;
+    margin: 2rem 0rem 2rem 0rem;
+    padding: 1rem 1rem 0.2rem 1rem;
+}
+.testimonial .heading{
+    text-align: center;
+    line-height: 0.5rem;
+}
+.testimonial .heading h2{
+    font-family: "Amatic SC", sans-serif;
+    font-size: 3rem;
+}
+.testimonial .says{
+    margin: 5rem 0rem 5rem 15rem;
+    display: flex;
+    align-items: center;
+}
+.testimonial .saying{
+    border-left: 3px solid red;
+    filter: contrast(90%);
+    padding-left: 2rem;
+}
+#quotes{
+    color: red;
+    font-size: x-large;
+    filter: contrast(70%);
+}
+.testimonial img{
+    border-radius: 50%;
+    border: 5px solid white;
+    margin:3rem 0rem 0rem 5rem;
+}
+.testimonial .pages{
+    font-size: 3rem;
+    text-align: center;
+    color: grey;
+}
+.testimonial h3{
+    font-size: x-large;
+}
+.testimonial #name{
+    line-height: 0.5rem;
+}
+.testimonial #name p{
+    color: grey;
+}
+
+/* =====  Events   ===== */
+
+.events .heading{
+    padding: 7rem 0rem 0rem 0rem;
+    text-align: center;
+    line-height: 0.5rem;
+}
+.events .heading h2{
+    font-family: "Amatic SC", sans-serif;
+    font-size: 3rem;
+}
+.events .details{
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+}
+.events .details img{
+    border: 1px solid white;
+    filter: brightness(60%);
+}
+.events .details .party1{
+    position: relative;
+}
+.events .details .entry1{
+    color: white;
+    position: absolute;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    left: 30px;
+    top: 300px;
+}
+.events .details .party2{
+    position: relative;
+}
+.events .details .entry2{
+    color: white;
+    position: absolute;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    left: 30px;
+    top: 300px;
+}.events .details .party3{
+    position: relative;
+}
+.events .details .entry3{
+    color: white;
+    position: absolute;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    left: 30px;
+    top: 300px;
+}
+.events .details #cost{
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+/* === chefs === */
+
+.chefs{
+    background-color: whitesmoke;
+    margin: 2rem 0rem 2rem 0rem;
+    padding: 5rem;
+}
+.chefs .heading{
+    text-align: center;
+    line-height: 0.5rem;
+}
+.chefs .heading h2{
+    font-family: "Amatic SC", sans-serif;
+    font-size: 3rem;
+}
+.chefs .details{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 5rem;
+}
+.chefs .details img{
+    border-radius: 1%;
+}
+.chefs .details h3{
+    font-size: x-large;
+}
+.chefs .details p{
+    font-size: 0.9rem;
+    color: gray;
+    line-height: 1.3rem;
+}
+.chefs .details .chef1{
+    position: relative;
+}
+.chefs .details .self1{
+    border: 1px solid white;
+    background-color: white;
+    position: absolute;
+    padding: 0rem 1rem 1rem 1rem;
+    top: 350px;
+
+}
+.chefs .details .chef2{
+    position: relative;
+}
+.chefs .details .self2{
+    border: 1px solid white;
+    background-color: white;
+    position: absolute;
+    padding: 0rem 1rem 1rem 1rem;
+    top: 350px;
+}
+.chefs .details .chef3{
+    position: relative;
+}
+.chefs .details .self3{
+    border: 1px solid white;
+    background-color: white;
+    position: absolute;
+    padding: 0rem 1rem 1rem 1rem;
+    top: 350px;
+}
+.chefs .details #profession{
+    color: grey;
+}
+
+/* ===== booking ===== */
+
+.booking{
+    margin: 5rem 8rem 5rem 5rem;
+}
+.booking .heading{
+    text-align: center;
+    line-height: 0.5rem;
+    margin-bottom: 5rem;
+}
+.booking .heading h2{
+    font-family: "Amatic SC", sans-serif;
+    font-size: 3rem;
+}
+.booking .image{
+    background-color: whitesmoke;
+    padding: 0rem;
+    display: flex;
+    align-items: start;
+}
+.booking .image #form .details{
+    padding: 0rem;
+    border-spacing: 3rem;
+}
+.booking .details input{
+    width: 200px;
+    height: 50px;
+}
+textarea{
+    margin-left: 50px;
+}
+.booking .button{
+    font-size: 1.2rem;
+    background-color: red;
+    border-color: red;
+    border-radius: 40px;
+    color: white;
+    padding: 1rem 3.2rem 1rem 3.2rem;
+    margin-left: 20rem;
+}
+.booking .button:hover{
+    filter: brightness(90%);
+}
+
+/* ===== gallery ===== */
+
+.gallery{
+    background-color: whitesmoke;
+    margin: 0rem 0rem 2rem 0rem;
+    padding: 0rem 3rem 1rem 3rem;
+}
+.gallery .heading{
+    padding-top: 7rem;
+    text-align: center;
+    line-height: 0.5rem;
+}
+.gallery .heading h2{
+    font-family: "Amatic SC", sans-serif;
+    font-size: 3rem;
+}
+.gallery .picture{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 3rem;
+}
+.gallery .picture .img3{
+    padding: 4px;
+    border: 4px solid red;
+}
+.gallery .pages{
+    font-size: 3rem;
+    text-align: center;
+    color: grey;
+}
+
+/* ===== map ===== */
+
+.map{
+    margin: 0rem 2rem 2rem 0rem;
+    padding: 0rem 3rem 2rem 5rem;
+}
+.map .heading{
+    padding-top: 7rem;
+    text-align: center;
+    line-height: 0.5rem;
+}
+.map .heading h2{
+    font-family: "Amatic SC", sans-serif;
+    font-size: 3rem;
+}
+
+
+/* message */
+
+.contact{
+    margin: 0rem 5rem 5rem 5rem;
+}
+.contact .heading{
+    text-align: center;
+    line-height: 0.5rem;
+}
+.contact .heading h2{
+    font-family: "Amatic SC", sans-serif;
+    font-size: 3rem;
+}
+.contact .col{
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: whitesmoke;
+    width: 600px;
+    height: 100px;
+}
+.contact .info-item{
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    gap: 2rem;
+}
+.contact i{
+    background-color: rgb(233, 45, 45);
+    border-radius: 50%;
+    padding: 1rem;
+    font-size: x-large;
+}
+.contact .address{
+    display: flex;
+    align-items: first baseline;
+    justify-content: space-between;
+}
+.contact form{
+    margin: 2rem 0rem 2rem 0rem;
+    padding: 3rem 3rem 2rem 3rem;
+    background-color: whitesmoke;
+}
+.contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: first baseline;
+
+}
+.txt{
+    padding-right: 30px;
+}
+.contact input{
+    width: 600px;
+    height: 30px;
+}
+.contact .subject{
+    width: 1240px;
+    height: 30px;
+}
+.contact .message{
+    margin: 2rem 1rem 1rem 0rem;
+}
+.contact button{
+    font-size: 1rem;
+    background-color: red;
+    border-color: red;
+    border-radius: 40px;
+    color: white;
+    padding: 1rem 2rem 1rem 2rem;
+    margin:2rem 0rem 2rem 32rem;
+}
+.contact button:hover{
+    filter: brightness(90%);
+}
+
+/* footer */
+
+
+.footer{
+    background-color: black;
+    color: rgb(220, 214, 214);
+    margin-top: 1rem;
+    padding: 1rem 0rem 2rem 0rem; 
+}
+.footer .address{
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    font-size: smaller;
+}
+.footer .follow i{
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+.footer .follow i:hover{
+    filter: brightness(70%);
+}
+.footer .call{
+    line-height: 0.5rem;
+}
+.footer .copyright{
+    padding: 1rem 0rem 1rem 0rem; 
+    text-align: center;
+}
